@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#f00"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Резюме"
+            android:textColor="#fff"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_rezult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="48sp"
+            android:text="proba"
+            android:textStyle="bold"
+
+            android:textColor="#000" />
+
+
+
+        <View
+            android:id="@+id/spase_view2"
+            android:layout_width="match_parent"
+            android:layout_height="54dp">
+
+        </View>
+
+        <Button
+            android:id="@+id/bnt_enter"
+            android:layout_width="284dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:background="#f00"
+            android:text=" Покажи адреса на картата " />
+
+    </LinearLayout>
+
+
+</LinearLayout>

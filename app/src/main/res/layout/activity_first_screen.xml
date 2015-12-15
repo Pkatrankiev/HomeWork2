@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#f00"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вход"
+            android:textColor="#fff"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Error"
+            android:textColor="#f00"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Въветете e Вашите имена"
+            android:textColor="#FFF"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_First_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Име"
+            android:textColor="#555" />
+
+        <EditText
+            android:id="@+id/edit_Last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Фамилия"
+            android:textColor="#555" />
+
+        <View
+            android:id="@+id/spase_view2"
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+
+        </View>
+
+        <Button
+            android:id="@+id/btn_enter"
+            android:layout_width="172dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:background="#f00"
+            android:text="@string/tx_btn_enter" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

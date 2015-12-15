@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#f00"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Детайли"
+            android:textColor="#fff"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+              android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_Years"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Години"
+            android:textColor="#555" />
+
+        <EditText
+            android:id="@+id/edit_Adres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Адрес"
+            android:textColor="#555" />
+
+
+        <EditText
+            android:id="@+id/edit_City"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Град"
+            android:textColor="#555" />
+
+        <EditText
+            android:id="@+id/edit_Birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Дата на раждане"
+            android:textColor="#555" />
+
+        <TextView
+            android:id="@+id/textError2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Error"
+            android:textColor="#f00"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_go"
+            android:layout_width="237dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:background="#f00"
+            android:text=" Продължи " />
+
+    </LinearLayout>
+
+
+</LinearLayout>
