@@ -2,6 +2,7 @@ package com.example.siti.homework2;
 
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -13,6 +14,7 @@ public class LastScreenActivity extends AppCompatActivity {
     private TextView textRezult;
     private Button button;
     String textSum;
+    String address;
 
 
     @Override
@@ -36,29 +38,16 @@ public class LastScreenActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent in = new Intent(LastScreenActivity.this, MapActivity.class);
-                startActivity(in);
+
+                address = "geo:0,0?q=" + SecondScreenActyvity.Adres.getText().toString() +
+                        " " + SecondScreenActyvity.City.getText().toString();
+
+                Uri gmmIntentUri = Uri.parse(address);
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
 
 
-//                if (isDataValid()) {
-//
-//                    Intent in = new Intent(SecondScreenActyvity.this, LastScreenActivity.class);
-//                    startActivity(in);
-//                } else {
-//                    Text_error2.setVisibility(View.VISIBLE);
-//                    Text_error2.setText("Попълнете всички полета");
-//                }
-//            }
-//
-//            private boolean isDataValid() {
-//                boolean fl;
-//                if (Years.getText().toString().equals("") ||
-//                        Adres.getText().toString().equals("") ||
-//                        City.getText().toString().equals("") ||
-//                        Birthday.getText().toString().equals("")) {
-//                    fl = false;
-//                } else fl = true;
-//                return fl;
             }
         });
 

@@ -18,12 +18,7 @@
         <activity android:name=".SecondScreenActyvity" >
         </activity>
 
-        <activity android:name=".ThirdScreenActivity" >
-        </activity>
         <activity android:name=".LastScreenActivity" >
-        </activity>
-
-        <activity android:name=".MapActivity" >
         </activity>
 
     </application>
